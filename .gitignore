@@ -1,0 +1,14 @@
+# Server
+node_modules/
+.env
+tmp/
+*.log
+
+# App
+app/node_modules/
+app/.expo/
+app/dist/
+
+# General
+.DS_Store
+*.local

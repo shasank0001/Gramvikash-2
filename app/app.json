@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Gramvikash",
+    "slug": "gramvikash",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1B6B2F"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Gramvikash uses the microphone for voice commands and voice posts.",
+        "NSSpeechRecognitionUsageDescription": "Gramvikash uses speech recognition to understand your voice commands.",
+        "NSLocationWhenInUseUsageDescription": "Gramvikash uses your location to show hyper-local content from your village area.",
+        "NSCameraUsageDescription": "Gramvikash uses the camera for crop disease diagnosis and post photos."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1B6B2F"
+      },
+      "permissions": [
+        "RECORD_AUDIO",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA"
+      ]
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "newArchEnabled": true,
+    "plugins": [
+      [
+        "expo-camera",
+        { "cameraPermission": "Allow Gramvikash to use your camera for crop diagnosis." }
+      ],
+      "expo-location",
+      "expo-av"
+    ]
+  }
+}
